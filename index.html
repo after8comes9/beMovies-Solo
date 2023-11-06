@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>beMovies</title>
+</head>
+<body>
+
+        <section id="section1">
+            <header>
+                <div class="logo"><span>be</span>movies</div>
+                <div class="nav">
+                    <a class="search" href="#top">search</a>
+                    <a class="latest" href="#section3">latest</a>
+                    <a class="genres" href="#section4">genres</a>
+                    <a class="register" href="#">register</a>
+                    <a class="signin" href="#">signin</a>
+                </div>
+            </header>
+        </section>
+    </div>
+
+    <section id="section2">
+        <div class="container">
+            <form class="searchBar">
+                <input class="searchInput" type="text" name="searchInput" id="searchInput" placeholder="Enter the name of a movie.."><label for="searchInput"><input class="searchBtn" type="submit" name="searchBtn" id="searchBtn" value=" "></label><br>
+                <div class="noResults"></div>
+            </form>
+            
+            <div class="searchResults">
+                <p>Results for “<span></span>”</p>
+                <div class="films">
+                    <a class="prevEl1" href="#"><img src="img/arrow.svg" alt=""></a>
+                    <div class="swiper swiper1">
+                        <div class="swiper-wrapper">
+                        </div>
+                    </div>
+                    <a class="nextEl1" href="#"><img src="img/arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="container">
+            <p>Latest releases</p>
+            <div class="films">
+                <a class="prevEl2" href="#"><img src="img/arrow.svg" alt=""></a>
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+  
+                    </div>
+                </div>
+                <a class="nextEl2" href="#"><img src="img/arrow.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="container">
+            <p>movies by genre</p>
+            <div class="genreNav">
+                <a id="comedy" class="activeGenre" href="#">Comedy</a>
+                <a id="drama" href="#">Drama</a>
+                <a id="action" href="#">Action</a>
+                <a id="romance" href="#">Romance</a>
+                <a id="fantasy"href="#">Fantasy</a>
+                <a id="animation" href="#">Animation</a>
+            </div>
+            <div class="films">
+                <a class="prevEl3" href="#"><img src="img/arrow.svg" alt=""></a>
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper">
+                        
+                    </div>
+                </div>
+                <a class="nextEl3" href="#"><img src="img/arrow.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <footer>
+            <div class="logo"><span>be</span>movies</div>
+            <div class="nav">
+                <a class="search" href="#section2">search</a>
+                <a class="latest" href="#section3">latest</a>
+                <a class="genres" href="#section4">genres</a>
+                <a class="register" href="#">register</a>
+                <a class="signin" href="#">signin</a>
+            </div>
+            <div class="copyright">@2023 - All rights reserved</div>
+        </footer>
+    </section>
+
+    <section class="modalInfo">
+        <div class="container">
+            <div class="poster"></div>
+            <!--
+            <div class="info">
+                <h1></h1>
+                <h2></h2>
+                <div class="score"><img src="img/star.svg" alt=""><h3></h3></div>
+                <h4></h4>
+                <p class="summary"></p>
+                <div class="cast">
+                    <h4>cast:</h4>
+                    <p class="actors"></p>
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="greyOut"></div>
+    </section>
+
+    <section class="modalReg">
+        <div class="container">
+            <div class="signUpLogin">
+                <a href="#"><div class="signup">Signup</div></a>
+                <a href="#"><div class="login">Login</div></a>
+            </div>
+            <form class="reglog">
+                <input class="username" type="text" name="username" id="username" placeholder="Username">
+                <input class="password" type="password" name="password" id="password" placeholder="Password">
+                <div class="remember">
+                    <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" value="remember">
+                    <label class="rememberMe" for="checkbox">remember me</label>
+                </div>
+                <input class="submit" type="submit" name="submit" id="submit" value="Login">
+                <a class="forgot" href="#">I forgot my password</a>
+                <p class="member">Not a member yet? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+        <div class="greyOut"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+</body>
+</html>
